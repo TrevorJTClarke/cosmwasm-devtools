@@ -12,7 +12,7 @@
   },
   "juno-uni": {
     "chainName": "Juno Testnet - Uni",
-    "chainId": "uni-3",
+    "chainId": "uni-6",
     "rpcEndpoint": "https://rpc.uni.juno.deuslabs.fi",
     "restEndpoint": "https://lcd.uni.juno.deuslabs.fi",
     "addressPrefix": "juno",
@@ -28,6 +28,26 @@
     "faucetEndpoint": "http://localhost:8000",
     "addressPrefix": "juno",
     "microDenom": "ujunox",
+    "coinDecimals": "6",
+    "gasPrice": "0.025"
+  },
+  "osmo-test-4": {
+    "chainName": "Osmosis Testnet - Test 4",
+    "chainId": "osmo-test-4",
+    "rpcEndpoint": "https://rpc-test.osmosis.zone",
+    "restEndpoint": "",
+    "addressPrefix": "osmo",
+    "microDenom": "uosmo",
+    "coinDecimals": "6",
+    "gasPrice": "0.025"
+  },
+  "elgafar-1": {
+    "chainName": "Stargaze Testnet - Elgafar",
+    "chainId": "elgafar-1",
+    "rpcEndpoint": "https://rpc.elgafar-1.stargaze-apis.com:443",
+    "restEndpoint": "",
+    "addressPrefix": "stars",
+    "microDenom": "ustars",
     "coinDecimals": "6",
     "gasPrice": "0.025"
   }
