@@ -15,7 +15,9 @@ import {
   setConnectionConfig,
   setConfigModalOpen,
 } from "./connectionSlice";
-import presets from "./presets.json";
+// import presets from "./presets.json";
+import presets from "./presets";
+
 
 // add basic validation
 const config = {
@@ -97,7 +99,7 @@ export const Configuration: FC = () => {
         <div className={styles.loadPreset}>
           <SlSelect
             placeholder="Load preset"
-            value={preset}
+            value={preset as any}
             hoist={true}
             onSlChange={(e) =>
               setPreset(
@@ -105,9 +107,9 @@ export const Configuration: FC = () => {
               )
             }
           >
-            {Object.entries(presets).map(([id, { chainName }]) => (
+            {Object.entries(presets).map(([id, { chainName }]: [string, any]) => (
               <SlMenuItem key={id} value={id}>
-                {chainName}
+                {chainName} ({id})
               </SlMenuItem>
             ))}
           </SlSelect>

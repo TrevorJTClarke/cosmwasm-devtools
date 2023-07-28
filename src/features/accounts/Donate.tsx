@@ -9,7 +9,8 @@ import { useAppDispatch, useAppSelector } from "../../app/hooks";
 import styles from "./Donate.module.css";
 import { sendCoins, setDonationOpen } from "./accountsSlice";
 import { fromMicroDenom } from "../../util/coins";
-import presets from "../connection/presets.json";
+// import presets from "../connection/presets.json";
+import presets from "../connection/presets";
 
 const DONATIONS_ADDRESS = "juno1py5lflcm30rgk56jc0ynyu4afn9fpxyk88wyvv";
 
@@ -17,7 +18,7 @@ export const Donate: FC = () => {
   const dispatch = useAppDispatch();
   const open = useAppSelector((state) => state.accounts.donationOpen);
   const sender = useAppSelector((state) => state.accounts.currentAccount!);
-  const junoConfig = presets["juno-mainnet"];
+  const junoConfig = presets["juno-1"];
   const [amount, setAmount] = useState("");
   const [memo, setMemo] = useState("");
 

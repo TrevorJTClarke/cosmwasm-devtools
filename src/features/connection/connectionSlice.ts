@@ -2,7 +2,8 @@ import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { RootState } from "../../app/store";
 import { pushMessage } from "../messages/messagesSlice";
 import connectionManager from "./connectionManager";
-import presets from "./presets.json";
+// import presets from "./presets.json";
+import presets from "./presets";
 
 export enum ConnectionStatus {
   Connecting = "connecting",
@@ -17,7 +18,7 @@ export interface ConnectionState {
 }
 
 const initialState: ConnectionState = {
-  config: presets["juno-uni"],
+  config: presets["uni-6"],
   modalOpen: false,
   status: ConnectionStatus.Connecting,
 };

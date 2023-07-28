@@ -31,9 +31,9 @@
     "coinDecimals": "6",
     "gasPrice": "0.025"
   },
-  "osmo-test-4": {
+  "osmo-test-5": {
     "chainName": "Osmosis Testnet - Test 4",
-    "chainId": "osmo-test-4",
+    "chainId": "osmo-test-5",
     "rpcEndpoint": "https://rpc-test.osmosis.zone",
     "restEndpoint": "",
     "addressPrefix": "osmo",
