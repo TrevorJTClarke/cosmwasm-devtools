@@ -34,7 +34,7 @@ export const getPresetsFromChains = () => {
       restEndpoint, // "https://lcd-juno.itastakers.com/",
       faucetEndpoint: "",
       addressPrefix: chain.bech32_prefix,
-      microDenom: `u${chain.bech32_prefix}`,
+      microDenom: `u${chain.bech32_prefix}${chain.chain_id === 'uni-6' ? 'x' : ''}`,
       coinDecimals: "6",
       gasPrice: "0.025"
     }
