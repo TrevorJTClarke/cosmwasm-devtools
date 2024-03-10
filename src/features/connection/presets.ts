@@ -11,6 +11,8 @@ const allowedChainIds = [
   'pion-1',
   'archway-1',
   'constantine-3',
+  'pheonix-1',
+  'pisco-1',
 ]
 
 export const getPresetsFromChains = () => {
