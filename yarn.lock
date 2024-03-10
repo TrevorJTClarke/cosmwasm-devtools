@@ -1076,10 +1076,10 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@chain-registry/types@^0.16.0":
-  version "0.16.0"
-  resolved "https://registry.yarnpkg.com/@chain-registry/types/-/types-0.16.0.tgz#f76409186899a976d33693d7f458c33d71a66730"
-  integrity sha512-4j6vq2Vqn/nF+UBjvRPUVs6eM3+5rJ+dPmEWpd/OoNH3wTy1k6aoilcSTZRR//vGcI5EOVGsxhhJxUzo2qqweA==
+"@chain-registry/types@^0.18.1":
+  version "0.18.1"
+  resolved "https://registry.yarnpkg.com/@chain-registry/types/-/types-0.18.1.tgz#bd926ddf204f2ae986a79b42f0cfe85764e2977a"
+  integrity sha512-H/UnOyd7WdcWHa2FGKxy4MclDDFrbE2rFwaUh9oubNJOey7UBI4dNF10oZIWM/1by15LUgDz45fVbh6uA6W5Tg==
   dependencies:
     "@babel/runtime" "^7.21.0"
 
@@ -3794,13 +3794,13 @@ case-sensitive-paths-webpack-plugin@^2.4.0:
   resolved "https://registry.yarnpkg.com/case-sensitive-paths-webpack-plugin/-/case-sensitive-paths-webpack-plugin-2.4.0.tgz#db64066c6422eed2e08cc14b986ca43796dbc6d4"
   integrity sha512-roIFONhcxog0JSSWbvVAh3OocukmSgpqOH6YpMkCvav/ySIV3JKg4Dc8vYtQjYi/UxpNE36r/9v+VqTQqgkYmw==
 
-chain-registry@^1.18.0:
-  version "1.18.0"
-  resolved "https://registry.yarnpkg.com/chain-registry/-/chain-registry-1.18.0.tgz#adf1df2171eb7a59ff2f0f84d8f8654b0fc36cdb"
-  integrity sha512-m80cUS7DM235FVxw82Vxf/9/j3qp8GXCQa7wtC55AaHdyajX/C0hWw513FVBKnMyCLPwLfMzC58eiFudBk888w==
+chain-registry@^1.29.1:
+  version "1.29.1"
+  resolved "https://registry.yarnpkg.com/chain-registry/-/chain-registry-1.29.1.tgz#15b0392af72a95ec6eab5f4c74cb8f28eec1b80f"
+  integrity sha512-1VdBKme094W3NzsQO7rZkCtGVYnxFGtouv6o+qBdwcRsBUqrhD+QCfNhvuQXa10vKnnpByIDlO9Xg10mx/3KWw==
   dependencies:
     "@babel/runtime" "^7.21.0"
-    "@chain-registry/types" "^0.16.0"
+    "@chain-registry/types" "^0.18.1"
 
 chalk@^2.0.0, chalk@^2.0.1, chalk@^2.4.1, chalk@^2.4.2:
   version "2.4.2"
