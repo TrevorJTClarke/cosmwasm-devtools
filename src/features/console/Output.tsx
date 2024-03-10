@@ -5,11 +5,12 @@ import ReactJson from "react-json-view";
 
 export const Output: FC = () => {
   const output = useAppSelector((state) => state.console.output);
+  console.log('output', output);
   const outputObject = useMemo(() => {
     try {
       return JSON.parse(output);
     } catch (_) {
-      return;
+      return output;
     }
   }, [output]);
   const error = useAppSelector((state) => state.console.error);
