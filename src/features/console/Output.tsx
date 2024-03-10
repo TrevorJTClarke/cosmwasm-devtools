@@ -10,7 +10,7 @@ export const Output: FC = () => {
     try {
       return JSON.parse(output);
     } catch (_) {
-      return output;
+      return;
     }
   }, [output]);
   const error = useAppSelector((state) => state.console.error);
@@ -22,7 +22,7 @@ export const Output: FC = () => {
 
   return (
     <div className={classes.join(" ")}>
-      {outputObject ? (
+      {outputObject && typeof outputObject !== 'string' ? (
         <ReactJson src={outputObject} indentWidth={2} quotesOnKeys={false} />
       ) : (
         <pre dangerouslySetInnerHTML={{ __html: output }} />
